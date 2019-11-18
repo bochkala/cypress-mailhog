@@ -14,11 +14,12 @@ Include this package into your Cypress command file:
 import 'cypress-mailhog';
 ```
 
-Add the base url of your MailHog installation to your `cypress.json`:
+Add the base url of your MailHog installation to your `cypress.json` env section:
 ```json
 {
-  ...
-  "mailHogUrl": "http://localhost:8090"
+  ...,
+  "env": 
+    "mailhog_url": "http://localhost:8025"
 }
 ```
 
